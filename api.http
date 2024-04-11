@@ -1,0 +1,36 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": 123,
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/c71713a4-8934-4ab0-a278-cfac6ca11773/attendees
+Content-Type: application/json
+
+{
+  "name": "Lurram Santos",
+  "email": "lurramsantos2.ap@hotmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/c71713a4-8934-4ab0-a278-cfac6ca11773
+
+
+###
+
+GET http://localhost:3333/attendees/1/badge
+
+###
+
+GET http://localhost:3333/attendees/1/check-in
+
+###
+
+GET http://localhost:3333/events/c71713a4-8934-4ab0-a278-cfac6ca11773/attendees?query=lurram
+
